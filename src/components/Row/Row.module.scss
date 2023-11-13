@@ -1,0 +1,37 @@
+.row {
+    color: #fff;
+    flex: 1;
+    h2 {
+    }
+  
+    .row__posters {
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      padding: 20px 0;
+      gap: 45px;
+      &::-webkit-scrollbar {
+        display: inline-block;
+        cursor: ew-resize;
+        height: 3px;
+        display: none;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background: #f8f7f771;
+        border-radius: 12px;
+      }
+  
+      .row__poster {
+        object-fit: contain;
+        max-height: 220px;
+        margin-right: 10px;
+        transition: transform 450ms;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+
+  }

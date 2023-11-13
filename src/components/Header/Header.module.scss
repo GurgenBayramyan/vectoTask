@@ -1,0 +1,238 @@
+ .banner{
+	color: #E4E4E4;
+    background-size: 100% 100%;
+    display: flex;
+    transition: all 300ms ease;
+
+    
+    img{
+        width: 35%;
+        padding: 5px 0;
+    }
+	.banner__contects{
+		margin-left: 30px;
+		padding-top: 140px;
+        height: 550px;
+		.banner__title{
+			font-style: 3rem;
+			font-weight: 800;
+			padding-bottom: 0.3rem;
+		}
+        .banner__doDesc{
+            color: #808183;
+            
+        }
+        .banner__info{
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+        }
+		.banner__buttons{
+			margin-top: 20px;
+			transition: 0.3s;
+            display: flex;
+            gap: 10px;
+            .banner__buttonP{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                width: 170px;
+                background-color: #F1F1F1;
+                cursor: pointer;
+                border-radius: 18px;
+                padding: 12px 38px;
+                font-size: 17px;
+                border: none;
+                font-weight: 600;
+                
+                img{
+                    width: 12px;
+                    align-self: center;
+                }
+            }
+            .banner__buttonM{
+                background-color: #1E23D8;
+                cursor: pointer;
+                border-radius: 18px;
+                padding: 12px 38px;
+                width: 170px;
+                font-size: 17px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                font-weight: 600;
+                color: #F3F3F1;
+            }
+		}
+		.banner__description{
+			line-height: 1.4em;
+			padding-top: 1rem;
+			font-size: 1.6rem;
+			margin-right: 50px;
+            font-weight: 300;
+            width: 580px;
+		}
+	}
+}
+.sideBar{
+    background-color: #040404;
+    width: 45px;
+    padding-left: 10px;
+    padding-top: 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    .sideBar__icons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        height: 100%;
+        img{
+            width: 36px;
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover{
+                background-color: #232A3F;
+            }
+        }
+    }
+    &:hover {
+        width: 250px;
+        padding-left: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: width 0.3s, background-color 0.3s;
+        background-color: #040404e8;
+        gap: 25px;
+      }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    width: 80%; 
+    max-width: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #1e23d8;
+    border: none;
+    color: #f3f3f1;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #161ca9;
+    }
+  }
+
+.infoModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .infoModal h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .infoModal p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .infoModal button {
+    background-color: #1e23d8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #161ca9;
+    }
+  }
+  
+  .infoModal button + button {
+    margin-left: 10px;
+  }
+
+
+.option{
+    display: flex;
+    width: 200px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    h3{
+        align-self: center;
+    }
+    &:hover{
+        background-color: #3B486D;
+    }
+}
+.userSection{
+    display: flex;
+    padding-right: 75px;
+    gap: 15px;
+    span{
+        align-self: center;
+    }
+}
+.setingsn{
+    color: #808183;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 55px;
+    h3{
+        cursor: pointer;
+    }
+}
